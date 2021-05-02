@@ -1,0 +1,12 @@
+- defaults:
+    link:
+        relink: true
+
+- clean: ['~']
+
+- link:
+    ~/.vimrc: .vimrc
+
+- shell:
+    - [git submodule update --init --recursive, Installing submodules]
+    - [sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" || echo "Skipping oh-my-zsh", Installing oh-my-zsh]
