@@ -16,4 +16,4 @@
     - [grep "zsh" ~/.bashrc || echo "zsh" >> ~/.bashrc, Adding zsh to bashrc]
     - [git config --global credential.helper '!aws codecommit credential-helper $@', Setting up CodeCommit helper]
     - [git config --global credential.UseHttpPath true, Setting up CodeCommit helper (part 2)]
-
+    - [curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vimrc, Installing vim-plug]
