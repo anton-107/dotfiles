@@ -49,7 +49,7 @@ Plug 'mbbill/undotree'
 call plug#end()
 
 " Init color scheme (as per https://github.com/morhetz/gruvbox/wiki/Installation):
-autocmd vimenter * ++nested colorscheme gruvbox
+silent! autocmd vimenter * ++nested colorscheme gruvbox
 set background=light
 
 " Allow rg to always try to find current root:
