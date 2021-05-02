@@ -13,7 +13,7 @@
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
     - [sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" || echo "Skipping oh-my-zsh", Installing oh-my-zsh]
-    - [grep "zsh" ~/.bashrc || echo '\n\nzsh'" >> ~/.bashrc, Adding zsh to bashrc]
+    - [grep "zsh" ~/.bashrc || echo "zsh" >> ~/.bashrc, Adding zsh to bashrc]
     - [git config --global credential.helper '!aws codecommit credential-helper $@', Setting up CodeCommit helper]
     - [git config --global credential.UseHttpPath true, Setting up CodeCommit helper (part 2)]
 
