@@ -17,4 +17,4 @@
     - [git config --global credential.helper '!aws codecommit credential-helper $@', Setting up CodeCommit helper]
     - [git config --global credential.UseHttpPath true, Setting up CodeCommit helper (part 2)]
     - [curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim, Installing vim-plug]
-    - [vim +PlugInstall +qall >/dev/null 2>&1, Installing VIM plugins]
+    - [vim +PlugInstall +qall >/dev/null 2>&1 || echo "Skipping VIM plugins", Installing VIM plugins]
