@@ -103,3 +103,6 @@ alias gco='git checkout'
 alias st='git status'
 alias diff='git diff'
 alias gca='git commit -a'
+
+# nvim is installed to home folder by dotfiles:
+alias nvim='~/install-nvim/squashfs-root/AppRun'
