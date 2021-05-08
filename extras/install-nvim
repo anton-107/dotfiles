@@ -1,0 +1,10 @@
+# see instructions here: https://github.com/neovim/neovim/wiki/Installing-Neovim
+
+cd ~
+mkdir install-nvim
+cd install-nvim
+curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim.appimage
+chmod u+x nvim.appimage
+./nvim.appimage --appimage-extract
+
+
