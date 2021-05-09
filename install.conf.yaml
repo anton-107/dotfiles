@@ -20,3 +20,9 @@
     - [curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim, Installing vim-plug]
     - [vim +PlugInstall +qall >/dev/null 2>&1 || echo "Skipping VIM plugins", Installing VIM plugins]
     - [./extras/install-nvim || echo "Skipping nvim installation", Installing nvim to home folder]
+    - [python3 -m pip install --user --upgrade pynvim, Installing python3 support for nvim]
+    - [python3 -m pip install --upgrade cmake, Installing cmake to build YouCompleteMe]
+    - [sudo yum install gcc10-c++, Installing compilers to complie YouCompleteMe]
+    - [CC=gcc CXX=gcc10-g++ python3 ./install.py --ts-completer, Compiling YouCompleteMe]
+
+
