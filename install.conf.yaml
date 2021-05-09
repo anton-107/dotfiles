@@ -10,7 +10,8 @@
       path: .zshrc
       force: true
     ~/.config/nvim/init.vim: init.vim 
-
+    ~/.gitconfig: .gitconfig
+    
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
     - [sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" || echo "Skipping oh-my-zsh", Installing oh-my-zsh]
