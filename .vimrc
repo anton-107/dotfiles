@@ -64,6 +64,8 @@ let mapleader = " "
 let g:netrw_banner = 0
 let g:netrw_browser_split=2
 let g:netrw_winsize=25
+" open files in previous window:
+let g:netrw_browse_split = 4
 
 " disable cach for ctrlp:
 let g:ctrlp_use_caching = 0
